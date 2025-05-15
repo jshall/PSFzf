@@ -899,7 +899,7 @@ function Get-PickedHistory($Query = '', [switch]$UsePSReadLineHistory) {
 		}
 	}
 
-	$result
+	$result -join "`n"
 }
 function Invoke-FzfPsReadlineHandlerHistory {
 	$result = $null
